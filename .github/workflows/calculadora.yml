@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: donwload repositorio
-      uses: actions/checkou@v3
+      uses: actions/checkout@v3
 
     - name: Configurar PHP
       uses: shivammathur/setup-php@v2
