@@ -1,0 +1,20 @@
+name: PHP calculadora
+on:
+  push:
+    branches: [main]
+
+jobs: 
+  calculadora:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: donwload repositorio
+      uses: actions/checkou@v3
+
+    - name: Configurar PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+
+    - name: executar calculadora
+      run: php calculadora.php
