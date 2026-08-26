@@ -1,0 +1,13 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "classmap": [
+            "Calculadora.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit --coverage-text"
+    }
+}
